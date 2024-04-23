@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.demo.registerapp.controller.Register"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page
+		showHeader="false"
+		class="sapUiContentPadding">
+		<content>
+				<Select
+					forceSelection="false"
+					selectedKey="Maha"
+					items="{
+						path: '/ProductCollection',
+						sorter: { path: 'Name' }
+					}"
+					change="onChange"
+					liveChange="onLiveChange">
+					<core:ListItem key="" text="Vineeth" />
+				</Select>
+		</content>
+	</Page>
+</mvc:View>
